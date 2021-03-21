@@ -5,42 +5,36 @@
     <title>Title</title>
 </head>
 <style ></style>
-<body style="background-color: #fcefa1">
-<h1 style="text-align:center;color:#800000" >New User Registration</br>
-<form  style="text-align:center" method="post">
+<body style="background-color: #a1fcb5">
+<h1 style="text-align:center;color:#80002d" >New User Registration</h1></br>
+<form  style="text-align:center" method="post" action="register">
                 <!--<input type="text" name="userid" value="" placeholder="登录名"/>-->
-                <input type="text" name="user" value="Username"
+                <input type="text" name="username" value="username"
                        onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" /><br/><br/>
 
 
-                <input type="password" name="pw" value="password" placeholder="password"  minlength="8" astyle="color:#999999;background: #EAEAAE" /><br/><br/>
+                <input type="password" name="password" value="password" placeholder="password"  minlength="8" astyle="color:#999999;background: #EAEAAE" /><br/><br/>
 
 
-                <input type="Email" name="Em" value="Email"
+                <input type="Email" name="Email" value="Email"
                        onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" /><br/><br/>
 
 
-                <input type="radio" name="sex"  id="man1" value="1" />
+                <input type="radio" name="gender"  id="man1" value="Male" />
                 <label for="man1">Male</label>
-                <input type="radio" name="sex" id="man2" value="1" />
+                <input type="radio" name="gender" id="man2" value="Female" />
                 <label for="man2">Female</label><br/><br/>
-                <input type="date" name="da" value="date of birth"
+                <input type="date" name="birthDate" value="birthDate"
                        onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" />
-        <tr style="text-align: center">
-            <td height="35" colspan="2"><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                 <input type="submit" name="Submit" value="提交" /> <input type="submit" name="Submit2" value="重置" />
 
-            </label>
-                <label>
-                </label>
-            </td>
-        </tr>
 
 
 </form>
-</h1>
+
 </body>
 </html>
