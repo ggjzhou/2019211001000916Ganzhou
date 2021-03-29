@@ -17,10 +17,9 @@
                 <input type="password" name="password" value="password" placeholder="password"  minlength="8" astyle="color:#999999;background: #EAEAAE" /><br/><br/>
 
 
-                <input type="Email" name="Email" value="Email"
+                <input type="Email" name="email" value="email"
                        onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" /><br/><br/>
-
 
                 <input type="radio" name="gender"  id="man1" value="Male" />
                 <label for="man1">Male</label>
