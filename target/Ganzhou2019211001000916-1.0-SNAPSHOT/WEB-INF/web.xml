@@ -82,6 +82,18 @@
             <param-value>2019211001000916</param-value>
         </init-param>
     </servlet>
+<!--    <servlet>-->
+<!--        <servlet-name>SearchServlet</servlet-name>-->
+<!--        <servlet-class>com.ganzhou.week6.SearchServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet>-->
+<!--        <servlet-name>RedirectServlet</servlet-name>-->
+<!--        <servlet-class>com.ganzhou.week6.RedirectServlet</servlet-class>-->
+<!--    </servlet>-->
+    <!--    <servlet>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <servlet-class>com.ganzhou.week5.demo.LoginServlet</servlet-class>-->
+<!--    </servlet>-->
     <servlet-mapping>
         <servlet-name>Ganzhou</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -102,4 +114,8 @@
         <servlet-name>ConfigDemoServlet</servlet-name>
         <url-pattern>/config</url-pattern>
     </servlet-mapping>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <url-pattern>/login</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
