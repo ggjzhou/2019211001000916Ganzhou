@@ -1,4 +1,4 @@
-package com.ganzhou.week6;
+package com.ganzhou.week6.demo;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
