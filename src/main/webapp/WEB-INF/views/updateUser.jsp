@@ -25,7 +25,7 @@
 <form  style="text-align:center" method="post" action="updateUser">
     <!--<input type="text" name="userid" value="" placeholder="登录名"/>-->
     <h1 style="text-align:center;color:#80002d" > User Update</h1></br>
-    id；<input type="hidden" name="id" value="<%=u.getId()%>" >
+    <input type="hidden" name="id" value="<%=u.getId()%>" >
     username:<input type="text" name="username" value="<%=u.getUsername()%>"
            onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
            onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" /><br/><br/>

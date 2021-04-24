@@ -24,7 +24,7 @@ import java.sql.Date;
 @WebServlet(name = "UpdateUserServlet", value = "/updateUser")
 public class UpdateUserServlet extends HttpServlet {
     Connection con=null;
-    Date birthDate;
+
     @Override
     public void init() throws ServletException {
         con = (Connection) getServletContext().getAttribute("con");
@@ -38,54 +38,30 @@ public class UpdateUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-//        int id = Integer.parseInt(request.getParameter("id"));
-//        String username=request.getParameter("username");
-//        String password=request.getParameter("password");
-//        String Email=request.getParameter("Email");
-//        String gender=request.getParameter("gender");
-//        Date birthDate = Date.valueOf(request.getParameter("birthDate"));
-//
-//        User us=new User(id,username,password,Email,gender,birthDate);
-//        us.setId(id);
-//
-//        us.setUsername(username);
-//        us.setPassword(password);
-//        us.setEmail(Email);
-//        us.setGender(gender);;
-//        us.setBirthDate(birthDate);
-//        UserDao userDao=new UserDao();
-//        try {
-//            int user =userDao.updateUser(con,us);
-//            if (user ==1) {
-//
-//                request.getRequestDispatcher("WEB-INF/views/userInfo.jsp").forward(request, response);
-//            } else {
-//            request.getRequestDispatcher("/login").forward(request, response);
-//            }
-//        }
-//            catch(SQLException throwables){
-//                throwables.printStackTrace();
-//            }
-//
-//    }
-    int id = Integer.parseInt(request.getParameter("id"));
-    String Username = request.getParameter("username");
-    String Password = request.getParameter("password");
-    String Email = request.getParameter("email");
-    String Gender = request.getParameter("gender");
-    Date BirthDate = Date.valueOf(request.getParameter("birthDate"));
-    UserDao userDao=new UserDao();
-    User user =new User(id,Username,Password,Email,Gender,BirthDate);
+        int id = Integer.parseInt(request.getParameter("id"));
+        String username=request.getParameter("username");
+        String password=request.getParameter("password");
+        String Email=request.getParameter("email");
+        String gender=request.getParameter("gender");
+        Date birthDate = Date.valueOf(request.getParameter("birthDate"));
+
+        User us=new User(id,username,password,Email,gender,birthDate);
+        us.setId(id);
+
+        UserDao userDao=new UserDao();
         try {
-        int flag = userDao.updateUser(con,user);
-        if (flag!=0) {
-            request.getRequestDispatcher("/login").forward(request, response);
-        } else {
-            request.setAttribute("message", "Username or Password Error!!!");
-            request.getRequestDispatcher("WEB-INF/views/updateUser.jsp").forward(request, response);
+            int user =userDao.updateUser(con,us);
+            if (user !=0) {
+
+                request.getRequestDispatcher("/login").forward(request, response);
+            } else {
+                System.out.println("你的修改不符合格式");
+            }
         }
-    } catch (SQLException throwables) {
-        throwables.printStackTrace();
+            catch(SQLException throwables){
+                throwables.printStackTrace();
+            }
+
     }
-}
+
 }
