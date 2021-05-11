@@ -18,7 +18,7 @@
                 <label for="man1">Male</label>
                 <input type="radio" name="gender" id="man2" value="Female" />
                 <label for="man2">Female</label><br/><br/>
-                birthDate:<input type="date" name="birthDate" value="birthDate"
+                birthDate:<input type="text" name="birthDate" value="birthDate"
                        onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999;background: #EAEAAE" />
                 <input type="submit" name="Submit" value="Submit" />
