@@ -70,6 +70,6 @@ public class CalServlet extends HttpServlet {
             response.addCookie(c5);
             c3.setMaxAge(5);c4.setMaxAge(5);c5.setMaxAge(5);
         }
-        response.sendRedirect("8080/2019211001000916Ganzhou_war_exploded/lab3/Cal.jsp");
+        response.sendRedirect("/2019211001000916Ganzhou_war_exploded/lab3/Cal.jsp");
     }
 }

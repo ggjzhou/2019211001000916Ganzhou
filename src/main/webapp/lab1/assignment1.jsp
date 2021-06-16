@@ -1,13 +1,7 @@
 <%@ page import="com.lab1.Person" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.lab1.Dog" %><%--
-  Created by IntelliJ IDEA.
-  User: Lenovo
-  Date: 5/15/2021
-  Time: 9:48 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.lab1.Dog" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -52,7 +46,6 @@ List<Person> personList=new ArrayList<Person>();
 personList.add(new Person("Tom",new Dog("Tommy")));
 personList.add(new Person("Sam",new Dog("Sammy")));
 personList.add(new Person("Gan",new Dog("grey")));
-// todo 6 : add a new person into PersonList - person name and dog name
 request.setAttribute("AllPerson",personList);
 %>
 <h1>print person name :   and persons' dog name</h1>
